@@ -11,6 +11,7 @@ gem "middleman-autoprefixer", "~> 2.5.0"
 gem "middleman-livereload", "~> 3.1.0"
 
 # Assets
+gem "middleman-minify-html"
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'
 end
