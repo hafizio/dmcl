@@ -69,4 +69,13 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+end
+
+after_configuration do
+  if defined?(RailsAssets)
+    RailsAssets.load_paths.each do |path|
+      sprockets.append_path path
+    end
+  end
 end

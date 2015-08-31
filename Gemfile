@@ -10,3 +10,8 @@ gem "middleman-autoprefixer", "~> 2.5.0"
 # Development
 gem "middleman-livereload", "~> 3.1.0"
 
+# Assets
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'
+end
+
