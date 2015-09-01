@@ -32,24 +32,22 @@ title: Daddy Mummy Co
       h4.text-center Please complete the form below
       .col-md-offset-3
         .col-md-8
-          form
-            fieldset.form-group
-              label for="exampleInputEmail1"  Name
-              input#exampleInputEmail1.form-control placeholder=("Enter your name") type="email"
-              small.text-muted We'll never share your email with anyone else.
-            fieldset.form-group
-              label for="exampleInputEmail1"  What is your budget?
-              input#exampleInputEmail1.form-control placeholder=("Enter your budget (in RM)") type="email"
-              small.text-muted This will help us match kindergartens within your budget.
-            fieldset.form-group
-              label for="exampleInputEmail1"  Email address
-              input#exampleInputEmail1.form-control placeholder=("Enter your email") type="email"
-              small.text-muted We'll never share your email with anyone else.
-            fieldset.form-group
-              label for="exampleInputPassword1"  Phone
-              input#exampleInputPassword1.form-control placeholder="Your phone number" type="password"
-              .text-right
-                button.btn.btn-success type="submit"  Submit
+          form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
+            input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
+            input name="id" type="hidden" value="a45841c5b4"
+            .form-group
+              input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name"
+            .form-group
+              input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location"
+            .form-group
+              input#MERGE5.form-control name="MERGE5" size="25" type="text" value="" placeholder="Kid’s Age"
+            .form-group
+              input#MERGE4.form-control name="MERGE4" size="25" type="text" value="" placeholder="Budget"
+            .form-group
+              input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email"
+              input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
+            .form-group.text-center
+              button.btn.btn-primary type="submit" value="send" Subscribe
 .section.footer
   .container
     h1 Footer
