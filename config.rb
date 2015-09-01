@@ -13,7 +13,7 @@ set :fonts_dir, 'assets/fonts'
 set :layout, 'layouts/application'
 
 configure :development do
- activate :livereload
+  activate :livereload
 end
 
 configure :build do
@@ -21,11 +21,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :relative_assets
-end
-
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method = :git
 end
 
 helpers do
@@ -40,6 +35,7 @@ helpers do
     link_to(link_text, page_url, options)
   end
 end
+
 after_configuration do
   if defined?(RailsAssets)
     RailsAssets.load_paths.each do |path|
