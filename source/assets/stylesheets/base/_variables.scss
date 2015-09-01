@@ -259,10 +259,10 @@ $btn-border-radius-sm:           $border-radius-sm !default;
 $input-padding-x:                .75rem !default;
 $input-padding-y:                .375rem !default;
 
-$input-bg:                       white !default;
+$input-bg:                       $gray-lighter !default;
 $input-bg-disabled:              $gray-lighter !default;
 
-$input-color:                    green !default;
+$input-color:                    black !default;
 $input-border:                   #ccc !default;
 $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
 
