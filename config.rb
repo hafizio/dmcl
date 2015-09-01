@@ -1,5 +1,6 @@
 require "extensions/views"
-require "slim"
+require 'slim'
+Slim::Engine.disable_option_validator!
 
 activate :views
 activate :directory_indexes
