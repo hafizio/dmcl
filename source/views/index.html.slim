@@ -2,8 +2,16 @@
 title: Daddy Mummy Co
 ---
 = partial 'nav'
-.section
- = image_tag 'cover-bg.jpg'
+#banner-home
+  .section.landing_box.home-banner
+    .container
+      h1 DaddyMummy
+      h2 A platform for parents and kindergartens
+      .header-button
+        .col-md-2
+          a.btn.btn-success href="#register-interest" Register my Interest
+        .col-md-2
+          a.btn.btn-info-outline href="#register-interest" Register my Interest
 #benefits
   .section.landing_box.benefits
     .container.text-center
@@ -49,3 +57,10 @@ title: Daddy Mummy Co
 .section.footer
   .container
     h1 Footer
+
+
+javascript:
+ $("#banner-home").hide();
+ $(document).ready(function() {
+   $("#banner-home").slideDown();
+ });

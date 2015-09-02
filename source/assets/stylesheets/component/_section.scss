@@ -22,3 +22,17 @@ section {
   background-color: #f5f5f5;
 }
 
+.home-banner {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(http://www.urwallpapers.com/download/7075/hd_wallpaper_kids_chasing.jpg/);
+ background-size: cover;
+ min-height: 25rem;
+}
+
+.header-button {
+  padding-top: 30px;
+}
