@@ -14,14 +14,26 @@ title: Daddy Mummy Co
             h2 Scroll down to read more about our platform
           p.lead
           .col-md-3
-            a.btn.btn-success href="#benefits"  Learn more
+            a.btn.btn-success.btn-lg href="#stats"  Learn more
           .col-md-3
-            a.btn.btn-info-outline href="#register-interest" I'm Interested!
+            a.btn.btn-info-outline.btn-lg href="#register-interest" I'm Interested!
 '
-#benefits
+#stats
+  .jumbotron.jumbotron-fluid.stats
+    .container.text-center
+      .col-md-4
+        h2 30,000+
+        p Expected Kindergartens Listings
+      .col-md-4
+        h2 1.5Mil+
+        p Expected Parents Community
+      .col-md-4
+        h2 100+
+        p Interested Parents in Database (it grows!)
+#features
   .jumbotron.jumbotron-fluid
     .container.text-center
-      .h1 What Do We Provide
+      .h1 Our Features
       .col-md-4
         .fa.fa-search.fa-4x
         p
@@ -40,10 +52,45 @@ title: Daddy Mummy Co
 #register-interest
   .form
     .container
-      h1.text-center Thank you for your interest
-      h4.text-center Please complete the form below
-      .col-md-offset-3
-        .col-md-8
+      .col-md-offset-0
+        .col-md-4
+          .card
+            .card-header
+              h4.card-title Got questions?
+              p.card-text Contact us through options below
+            .card-block
+              .card-text
+                h6 E-mail:
+                b
+                  |
+                    developeratdmc@gmail.com
+                p
+                h6 Phone:
+                b
+                  |
+                    012-34567890
+                p
+                h6 Address:
+                .text-right
+                  b
+                    |
+                      11-A
+                h6.text-right
+                  b
+                    |
+                      Menara Unknown
+                h6.text-right
+                  b
+                    |
+                      Cyberjaya
+                h6.text-right
+                  b
+                    |
+                      63000, Kuala Lumpur
+        .col-md-7
+          h1.text-center Thank You For Your Interest
+          h4.text-center Please complete the form below
+          hr
           form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
             input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
             input name="id" type="hidden" value="a45841c5b4"
@@ -63,6 +110,8 @@ title: Daddy Mummy Co
               input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
               .help-block.with-errors
               input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
+            h6
+              i We will contact you once our platform is ready
             .form-group.text-center
               button.btn.btn-primary type="submit" value="send" Subscribe
 
