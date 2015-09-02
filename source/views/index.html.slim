@@ -2,20 +2,26 @@
 title: Daddy Mummy Co
 ---
 = partial 'nav'
-#banner-home
-  .section.landing_box.home-banner
-    .container
-      h1 DaddyMummy
-      h2 A platform for parents and kindergartens
-      .header-button
-        .col-md-2
-          a.btn.btn-success href="#register-interest" Register my Interest
-        .col-md-2
-          a.btn.btn-info-outline href="#register-interest" Register my Interest
+.section.site-wrapper
+  .site-wrapper-inner
+    .cover-container
+      .inner.cover
+        #main-content
+          h1.cover-heading DaddyMummy
+          p
+            i "A platform for parents and kindergartens"
+          p
+            h2 Scroll down to read more about our platform
+          p.lead
+          .col-md-3
+            a.btn.btn-success href="#benefits"  Learn more
+          .col-md-3
+            a.btn.btn-info-outline href="#register-interest" I'm Interested!
+'
 #benefits
-  .section.landing_box.benefits
+  .jumbotron.jumbotron-fluid
     .container.text-center
-      h1 What Do We Provide
+      .h1 What Do We Provide
       .col-md-4
         .fa.fa-search.fa-4x
         p
@@ -32,7 +38,7 @@ title: Daddy Mummy Co
         h4 Join Community Events
         p Organize events and meet like-minded parents to share knowledge about early childhood education
 #register-interest
-  .section.landing_box.interest-form
+  .form
     .container
       h1.text-center Thank you for your interest
       h4.text-center Please complete the form below
@@ -42,25 +48,36 @@ title: Daddy Mummy Co
             input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
             input name="id" type="hidden" value="a45841c5b4"
             .form-group
-              input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name"
+              input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name" data-minlength="3" required=""
+              .help-block.with-errors
             .form-group
-              input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location"
+              input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location" data-minlength="3" required=""
+              .help-block.with-errors
             .form-group
-              input#MERGE5.form-control name="MERGE5" size="25" type="text" value="" placeholder="Kid’s Age"
+              input#MERGE5.form-control name="MERGE5" size="25" type="number" value="" placeholder="Kid’s Age (in years)" required=""
+              .help-block.with-errors
             .form-group
-              input#MERGE4.form-control name="MERGE4" size="25" type="text" value="" placeholder="Budget"
+              input#MERGE4.form-control name="MERGE4" size="25" type="number" value="" placeholder="Budget" required=""
+              .help-block.with-errors
             .form-group
-              input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email"
+              input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
+              .help-block.with-errors
               input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
             .form-group.text-center
               button.btn.btn-primary type="submit" value="send" Subscribe
+
 .section.footer
   .container
     h1 Footer
 
 
 javascript:
- $("#banner-home").hide();
+ $("#main-content").hide();
  $(document).ready(function() {
-   $("#banner-home").slideDown();
+   $("#main-content").slideDown();
+   $('#subscription_form').validator({
+    errors: {
+  minlength: 'Please enter atleast 3 characters'
+        }
+   });
  });

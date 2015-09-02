@@ -7,6 +7,5 @@ html
     title = current_page.data.title || "Daddy Mummy Co"
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
-  body class="page_classes"
-    main
-      = yield
+  body.page_classes
+    = yield

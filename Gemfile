@@ -20,5 +20,5 @@ gem "middleman-imageoptim", "~> 0.2.0"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'
+  gem 'rails-assets-bootstrap-validator', '~> 0.9.0'
 end
-
