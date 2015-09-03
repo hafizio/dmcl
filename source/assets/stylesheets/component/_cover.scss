@@ -34,6 +34,7 @@ body {
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  color: #ffffff;
   display: table;
   width: 100%;
   height: 60%; /* For at least Firefox */
@@ -47,8 +48,11 @@ body {
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
+  display: block;
+  padding-top: 100px;
+}
+.btn-inner {
+  margin-top: 50px;
 }
 .cover-container {
   margin-right: auto;
