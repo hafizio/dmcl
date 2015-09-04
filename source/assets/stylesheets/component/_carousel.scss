@@ -1,0 +1,27 @@
+.carousel {
+  &-inner {
+    height: 40%;
+    height: 40vh;
+  }
+
+  &-item {
+    padding: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  &-control {
+    &.right {
+      background-image: none;
+    }
+
+    &.left {
+      background-image: none;
+    }
+  }
+}
