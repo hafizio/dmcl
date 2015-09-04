@@ -1,10 +1,11 @@
-.navbar.navbar-light.bg-faded
-  a.navbar-brand href="#"
-    = image_tag('dmc-logo.png', width: "57", height: "26", alt: 'dmc-logo')
-  ul.nav.navbar-nav
-    li.nav-item.active
-      a.nav-link href="/" Home
+nav.navbar.navbar-light.bg-faded
+  a.navbar-brand DMC
+  ul.nav.navbar-nav.pull-right
     li.nav-item
-      a.nav-link href="#features" Our Features
+      = link_to 'ABOUT', '#about', class: 'nav-link'
+    li.nav-item
+      = link_to 'FEATURES', '#features', class: 'nav-link'
+    li.nav-item
+      = link_to 'TEAM', '#team', class: 'nav-link'
     li.nav-item.pull-right
-      a.btn.btn-info-outline href="#register-interest" Register my Interest
+      = link_to 'SIGN UP', '#sign_up', class: 'btn btn-primary'

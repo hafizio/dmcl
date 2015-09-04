@@ -37,26 +37,29 @@ body {
   color: #ffffff;
   display: table;
   width: 100%;
-  height: 60%; /* For at least Firefox */
+  height: 65%;
   min-height: 60%;
-  background-image:     linear-gradient(
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.1)
+  background-image: linear-gradient(to right,
+        rgba(41, 12, 113, 0.9),
+        rgba(57, 22, 144, 0.2)
       ),
-      url(/assets/images/cover-bg.jpg);
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      url(/assets/images/cover-bg.png);
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.3);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.3);
 }
+
 .site-wrapper-inner {
   display: block;
   padding-top: 100px;
 }
+
 .btn-inner {
   margin-top: 50px;
 }
+
 .cover-container {
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 10%;
 }
 
 /* Padding for spacing */

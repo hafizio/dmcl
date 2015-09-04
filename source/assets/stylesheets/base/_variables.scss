@@ -32,7 +32,8 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #512DA8 !default;
+$brand-secondary:           #F5B72C !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -339,7 +340,7 @@ $zindex-modal:             1050 !default;
 
 $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $spacer !default;
-$navbar-padding-vertical:           ($spacer / 2) !default;
+$navbar-padding-vertical:           $spacer !default;
 
 $navbar-dark-color:                 rgba(255,255,255,.5) !default;
 $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;

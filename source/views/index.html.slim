@@ -7,15 +7,11 @@ title: Daddy Mummy Co
     .cover-container
       .inner.cover
         #main-content
-          h1 DaddyMummy
-          p
-            h2.text-shadow A platform where parents and kindergartens are connected together
-          .btn-inner.text-center
-            .col-xs-12.col-md-3
-              a.btn.btn-success.btn-lg href="#stats"  Learn more
-            .col-xs-12.col-md-3
-              a.btn.btn-info-outline.btn-lg href="#register-interest" I'm Interested!
-'
+          h1.text-shadow Daddy & Mummy Community
+          br
+          h2.text-shadow A platform where parents and educators are connected together
+          br
+          = link_to 'Read More', '#about', class: 'btn btn-lg btn-secondary'
 #stats
   .jumbotron.jumbotron-fluid.stats
     .container.text-center
@@ -32,90 +28,53 @@ title: Daddy Mummy Co
   .jumbotron.jumbotron-fluid.features
     .container.text-center
       h1.text-shadow Our Features
+      br
       .col-md-4
-        .fa.fa-search.fa-4x.text-shadow
-        p
-        h4.text-shadow Discover Classes for Your Kids
-        p Discover the best classes for your kids. Choose classes by ratings, user reviews and make comparisons
+        .card
+          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Discover Classes
+            p.card-text.text-justify Discover the best classes for your kids. Choose classes by ratings, user reviews and make comparisons
       .col-md-4
-        .fa.fa-send.fa-4x.text-shadow
-        p
-        h4.text-shadow Explore Educational Activities
-        p Engage your kids with our user submitted activities that will help in nurturing intelligence and self esteem
+        .card
+          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Explore Activities
+            p.card-text.text-justify Engage your kids with our user submitted activities that will help in nurturing intelligence and self esteem
       .col-md-4
-        .fa.fa-users.fa-4x.text-shadow
-        p
-        h4.text-shadow Join Community Events
-        p Organize events and meet like-minded parents to share knowledge about early childhood education
-#register-interest
-  .form
-    .container
-      .col-md-offset-0
-        .col-md-4
-          .card
-            .card-header
-              h4.card-title Got questions?
-              p.card-text Contact us through options below
-            .card-block
-              .card-text
-                h6 E-mail:
-                b
-                  |
-                    contact@daddymummy.co
-                p
-                h6 Phone:
-                b
-                  |
-                    012-34567890
-                p
-                h6 Address:
-                .text-right
-                  b
-                    |
-                      11-A
-                h6.text-right
-                  b
-                    |
-                      Menara Unknown
-                h6.text-right
-                  b
-                    |
-                      Cyberjaya
-                h6.text-right
-                  b
-                    |
-                      63000, Kuala Lumpur
-        .col-md-7
-          h1.text-center Thank You For Your Interest
-          h4.text-center Please complete the form below
-          hr
-          form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
-            input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
-            input name="id" type="hidden" value="a45841c5b4"
-            .form-group
-              input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name" data-minlength="3" required=""
-              .help-block.with-errors
-            .form-group
-              input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location" data-minlength="3" required=""
-              .help-block.with-errors
-            .form-group
-              input#MERGE5.form-control name="MERGE5" size="25" type="number" value="" placeholder="Kid’s Age (in years)" required=""
-              .help-block.with-errors
-            .form-group
-              input#MERGE4.form-control name="MERGE4" size="25" type="number" value="" placeholder="Budget" required=""
-              .help-block.with-errors
-            .form-group
-              input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
-              .help-block.with-errors
-              input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
-            h6
-              i We will contact you once our platform is ready
-            .form-group.text-center
-              button.btn.btn-primary type="submit" value="send" Subscribe
-
-.section.footer
+        .card
+          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Join Events
+            p.card-text.text-justify Organize events and meet like-minded parents to share knowledge about early childhood education
+section#subscribe
   .container
-    p DaddyMummy.co
+    .col-md-6.col-md-offset-3
+      .text-center
+        h4 Please complete the form below
+        p We'll get in touch once our platform is ready
+      form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
+        input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
+        input name="id" type="hidden" value="a45841c5b4"
+        .form-group
+          input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name" data-minlength="3" required=""
+          .help-block.with-errors
+        .form-group
+          input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location" data-minlength="3" required=""
+          .help-block.with-errors
+        .form-group
+          input#MERGE5.form-control name="MERGE5" size="25" type="number" value="" placeholder="Kid’s Age (in years)" required=""
+          .help-block.with-errors
+        .form-group
+          input#MERGE4.form-control name="MERGE4" size="25" type="number" value="" placeholder="Budget" required=""
+          .help-block.with-errors
+        .form-group
+          input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
+          .help-block.with-errors
+          input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
+        .form-group.text-center
+          button.btn.btn-primary type="submit" value="send" Subscribe
+= partial 'footer'
 
 
 javascript:
