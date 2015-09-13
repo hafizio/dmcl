@@ -1,7 +1,9 @@
 footer.footer
   .container
     .row
-      .col-md-3
+      .col-md-1
+        = image_tag 'logo.png'
+      .col-md-2
         h5 DMC
         p About
         p Terms
@@ -13,8 +15,8 @@ footer.footer
         p Kids Store
       .col-md-3
         h5 COMMUNITY
-        p Facebook
-        p Twitter 
+        p = link_to 'Facebook', 'https://www.facebook.com/daddymummy.co'
+        p Twitter
         p Forum
       .col-md-3
         h5 CONTACT

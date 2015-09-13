@@ -13,7 +13,7 @@ section {
 
 .stats {
   color: #ffffff;
-  background-color: #FFA726;
+  background-color: #636363;
   margin-bottom: 0px;
   h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
@@ -22,19 +22,36 @@ section {
 
 .features {
   h1 {
-    color: #212121;
+    color: #898989;
   }
-  background-color: #EEE9F9;
+  background-color: #ffffff;
 }
 
 .testimonial {
   height: 60%;
   height: 60vh;
-  background-color: #2e2e2e;
+  background-color: #636363;
 }
 
 .section {
   &--subscribe {
-    background-color: #EEE9F9;
+    color: #898989;
+    background-color: #ffffff;
   }
+}
+.divider-sm {
+  height: 10px;
+  width: 100%;
+}
+.divider-bg {
+  height: 20px;
+  width: 100%;
+}
+
+.blue {
+    background-color: #1bbdd4;
+}
+
+.white {
+    background-color: #ffffff;
 }

@@ -12,6 +12,7 @@ title: Daddy Mummy Co
           h2.text-shadow A platform where parents and educators are connected together
           br
           = link_to 'Read More', '#about', class: 'btn btn-lg btn-secondary'
+.divider-sm.blue
 #stats
   .jumbotron.jumbotron-fluid.stats
     .container.text-center
@@ -31,52 +32,58 @@ title: Daddy Mummy Co
       br
       .col-md-4
         .card
-          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          = image_tag 'icons/discover-classes-178x178.png', class: 'card-img-top'
           .card-block
             h4.card-title Discover Classes
             p.card-text.text-justify Discover the best classes for your kids. Choose classes by ratings, user reviews and make comparisons
       .col-md-4
         .card
-          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          = image_tag 'icons/explore-activities-178x178.png', class: 'card-img-top'
           .card-block
             h4.card-title Explore Activities
             p.card-text.text-justify Engage your kids with our user submitted activities that will help in nurturing intelligence and self esteem
       .col-md-4
         .card
-          = image_tag 'http://blog.boystown.org/wp-content/uploads/2015/04/iStock_000009271988Small-f-318x180.jpg', size: '318x180', class: 'card-img-top'
+          = image_tag 'icons/events-178x178.png', class: 'card-img-top'
           .card-block
             h4.card-title Join Events
             p.card-text.text-justify Organize events and meet like-minded parents to share knowledge about early childhood education
+.divider-bg.blue
 section.testimonial
   .container
-    h1.text-center Hear what parents are saying about us.
+    h1.text-center Parents Testimonials
   br
   #carousel-testimonial.carousel.slide data-ride="carousel" data-interval="false"
-    ol.carousel-indicators
-      li.active data-slide-to="0" data-target="#carousel-testimonial" 
-      li data-slide-to="1" data-target="#carousel-testimonial" 
-      li data-slide-to="2" data-target="#carousel-testimonial" 
-    .carousel-inner role="listbox" 
+    .carousel-inner role="listbox"
       .carousel-item.active
-        h3 The community is awesome. Solved my problem. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum
-        h5 Hafiz
+        .picture
+          = image_tag 'suhaida-sarif_692x461.jpg', width: '254', height: 'auto'
+        h5 "Wow, DaddyMummy is genius! I can soon search for all kinds of activities for my kids all from a single site. Best of all, I am able to communicate with parents and teachers community. Isn't that amazing? I have to share this with my group of parent friends."
+        h6
+          i -Sheila
       .carousel-item
-        h3 The community is awesome. Solved my problem. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum
-        h5 Hafiz
+        .picture
+          = image_tag 'nisha_692x461.jpg', width: '254', height: 'auto'
+        h4 "It's impossible for working parents like us to check out each and every preschool or daycare before deciding which is the best for our daughter. DaddyMummy simply helps narrow down our options specific to our criterias. Can't wait to try out their mobile app!
+        h5"
+          i -Nisha
       .carousel-item
-        h3 The community is awesome. Solved my problem. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum
-        h5 Hafiz
-    a.left.carousel-control data-slide="prev" href="#carousel-testimonial" role="button" 
-      span.icon-prev aria-hidden="true" 
+        .picture
+          = image_tag 'serene_692x461.jpg', width: '254', height: 'auto'
+        h3 "I've been looking for this type of comprehensive Directory website to find an activities place for my daughter. Can't wait for it to launch!"
+        h5
+          i -Serene
+    a.left.carousel-control data-slide="prev" href="#carousel-testimonial" role="button"
+      span.icon-prev aria-hidden="true"
       span.sr-only Previous
-    a.right.carousel-control data-slide="next" href="#carousel-testimonial" role="button" 
-      span.icon-next aria-hidden="true" 
+    a.right.carousel-control data-slide="next" href="#carousel-testimonial" role="button"
+      span.icon-next aria-hidden="true"
       span.sr-only Next
 section.section--subscribe#subscribe
   .container
     .col-md-6.col-md-offset-3
       .text-center
-        h4 Please complete the form below
+        h2 Please complete the form below
         p We'll get in touch once our platform is ready
       form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
         input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
@@ -98,14 +105,15 @@ section.section--subscribe#subscribe
           .help-block.with-errors
           input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
         .form-group.text-center
-          button.btn.btn-primary type="submit" value="send" Subscribe
+          button.btn.btn-success type="submit" value="send" Subscribe
+.divider-bg.blue
 = partial 'footer'
 
 
 javascript:
  $("#main-content").hide();
  $(document).ready(function() {
-   $("#main-content").slideDown();
+   $("#main-content").delay(500).slideDown();
    $('#subscription_form').validator({
     errors: {
   minlength: 'Please enter atleast 3 characters'
