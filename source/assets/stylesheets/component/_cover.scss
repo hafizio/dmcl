@@ -37,29 +37,18 @@ body {
   color: #ffffff;
   display: table;
   width: 100%;
-  height: 540px;
-  min-height: 540px;
+  height: 486px;
+  min-height: 486px;
+  background-position: right;
+  background-repeat: no-repeat;
   background-color: #1abdd4;
-  @media(min-width: 768px) {
-  background-color: #ffffff;
+
+  background-color: #fefefe;
   background-image: linear-gradient(to right,
-        rgba(34, 191, 213, 1),
-        rgba(255, 255, 255, 0)
+        rgba(255, 255, 255, 0) 30%,
+        rgba(0, 0, 0, 0) 0%
       ),
-      url(/assets/images/cover-bg.png);
-      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.3);
-              box-shadow: inset 0 0 100px rgba(0,0,0,.3);
-    }
-  @media(min-width: 992px) {
-  background-color: #ffffff;
-  background-image: linear-gradient(to right,
-        rgba(34, 191, 213, 1) 30%,
-        rgba(255, 255, 255, 0) 60%
-      ),
-      url(/assets/images/cover-bg.png);
-      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.3);
-              box-shadow: inset 0 0 100px rgba(0,0,0,.3);
-      }
+      url(/assets/images/main-cover.png);
 }
 
 .site-wrapper-inner {
@@ -134,10 +123,20 @@ body {
 
 .cover {
   padding: 0 20px;
+  h1, h2 {
+    color: #8e2679;
+  }
 }
-.cover .btn-lg {
+.btn-orange {
   padding: 10px 20px;
   font-weight: bold;
+  color: #8e2679;
+  background-color: #f7941d;
+  border-bottom: 3px solid #8e2679;
+}
+.btn-orange:hover {
+  color: #8e2679;
+  background-color: #f9af56;
 }
 
 

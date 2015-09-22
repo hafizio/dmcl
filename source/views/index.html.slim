@@ -7,24 +7,26 @@ title: Daddy Mummy Co
     .cover-container
       .inner.cover
         #main-content
-          h1.text-shadow Daddy & Mummy Community
+          h1 Daddy & Mummy Community
           br
-          h2.text-shadow A platform where parents and educators are connected together
+          h2 A platform that bridges parents and educators for a better tomorrow
           br
-          = link_to 'Read More', '#about', class: 'btn btn-lg btn-secondary'
-.divider-sm.blue
+          = link_to 'Read More', '#features', class: 'btn btn-lg btn-orange'
 #stats
   .jumbotron.jumbotron-fluid.stats
     .container.text-center
+      .col-md-4.border-right
+        h1 15,000+
+        h4 LISTING
+        h5 Find pre-schools, enrichment classes and children activities all for FREE!
+      .col-md-4.border-right
+        h1 1.5mil+
+        h4 PARENTS
+        h5 We have the biggest number of parents using our site!
       .col-md-4
-        h1 30,000+
-        p Expected Kindergartens Listings
-      .col-md-4
-        h1 1.5Mil+
-        p Expected Parents Community
-      .col-md-4
-        h1 100+
-        p Interested Parents in Database (it grows!)
+        h1 500+
+        h4 ARTICLES
+        h5 Our experts sharing their knowledge with you
 #features
   .jumbotron.jumbotron-fluid.features
     .container.text-center
@@ -32,53 +34,75 @@ title: Daddy Mummy Co
       br
       .col-md-4
         .card
-          = image_tag 'icons/discover-classes-178x178.png', class: 'card-img-top'
+          = image_tag 'feat1.png', class: 'card-img-top'
           .card-block
             h4.card-title Discover Classes
             p.card-text.text-justify Discover the best classes for your kids. Choose classes by ratings, user reviews and make comparisons
       .col-md-4
         .card
-          = image_tag 'icons/explore-activities-178x178.png', class: 'card-img-top'
+          = image_tag 'feat2.png', class: 'card-img-top'
           .card-block
             h4.card-title Explore Activities
             p.card-text.text-justify Engage your kids with our user submitted activities that will help in nurturing intelligence and self esteem
       .col-md-4
         .card
-          = image_tag 'icons/events-178x178.png', class: 'card-img-top'
+          = image_tag 'feat3.png', class: 'card-img-top'
           .card-block
             h4.card-title Join Events
             p.card-text.text-justify Organize events and meet like-minded parents to share knowledge about early childhood education
-.divider-bg.blue
 section.testimonial
   .container
     h1.text-center Parents Testimonials
-  br
-  #carousel-testimonial.carousel.slide data-ride="carousel" data-interval="false"
-    .carousel-inner role="listbox"
-      .carousel-item.active
-        .picture
-          = image_tag 'suhaida-sarif_692x461.jpg', width: '254', height: 'auto'
-        h5 "Wow, DaddyMummy is genius! I can soon search for all kinds of activities for my kids all from a single site. Best of all, I am able to communicate with parents and teachers community. Isn't that amazing? I have to share this with my group of parent friends."
-        h6
-          i -Sheila
-      .carousel-item
-        .picture
-          = image_tag 'nisha_692x461.jpg', width: '254', height: 'auto'
-        h4 "It's impossible for working parents like us to check out each and every preschool or daycare before deciding which is the best for our daughter. DaddyMummy simply helps narrow down our options specific to our criterias. Can't wait to try out their mobile app!
-        h5"
-          i -Nisha
-      .carousel-item
-        .picture
-          = image_tag 'serene_692x461.jpg', width: '254', height: 'auto'
-        h3 "I've been looking for this type of comprehensive Directory website to find an activities place for my daughter. Can't wait for it to launch!"
-        h5
-          i -Serene
-    a.left.carousel-control data-slide="prev" href="#carousel-testimonial" role="button"
-      span.icon-prev aria-hidden="true"
-      span.sr-only Previous
-    a.right.carousel-control data-slide="next" href="#carousel-testimonial" role="button"
-      span.icon-next aria-hidden="true"
-      span.sr-only Next
+    br
+    .col-md-4
+      .text-center
+        = image_tag 'shiela-ali.png', class: 'card-img-top'
+      .fa.fa-quote-left.fa-2x
+      h6 Wow, DaddyMummy is genius! I can soon search for all kinds of activities for my kids all from a single site. Best of all, I am able to communicate with parents and teachers community. Isn't that amazing? I have to share this with my group of parent friends
+      .text-right
+        .fa.fa-quote-right.fa-2x
+      h6 -Shiela and Ali
+    .col-md-4
+      .text-center
+        = image_tag 'nisha-khathir.png', class: 'card-img-top'
+      .fa.fa-quote-left.fa-2x
+      h6 It's impossible for working parents like us to check out each and every preschool or daycare before deciding which is the best for our daughter. DaddyMummy simply helps narrow down our options specific to our criterias. Can't wait to try out their mobile app!
+      .text-right
+        .fa.fa-quote-right.fa-2x
+      h6 -Nisha and Khathir
+    .col-md-4
+      .text-center
+        = image_tag 'shany-jason.png', class: 'card-img-top'
+      .fa.fa-quote-left.fa-2x
+      h6 DaddyMummy simply helps narrow down our options specific to our criterias. Can't wait to try out their mobile app!
+      .text-right
+        .fa.fa-quote-right.fa-2x
+      h6 -Shany and Jason
+#team
+  .jumbotron.jumbotron-fluid.team
+    .container.text-center
+      h1 Our Team
+      br
+      .col-md-3
+        = image_tag 'team/shariff.png'
+        .row
+          b Shariff Saim
+        .row Co-Founder
+      .col-md-3
+        = image_tag 'team/hafiz.png'
+        .row
+          b Hafiz Khairuddin
+        .row Co-Founder
+      .col-md-3
+        = image_tag 'team/chew.png'
+        .row
+          b Chew Wei Lai
+        .row Business Development
+      .col-md-3
+        = image_tag 'team/luqman.png'
+        .row
+          b Luqman Hakim
+        .row Developer
 section.section--subscribe#subscribe
   .container
     .col-md-6.col-md-offset-3
@@ -105,8 +129,7 @@ section.section--subscribe#subscribe
           .help-block.with-errors
           input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
         .form-group.text-center
-          button.btn.btn-success type="submit" value="send" Subscribe
-.divider-bg.blue
+          button.btn.btn-primary type="submit" value="send" Subscribe
 = partial 'footer'
 
 
