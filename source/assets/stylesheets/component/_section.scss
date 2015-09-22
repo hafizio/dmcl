@@ -14,7 +14,7 @@ section {
 .stats {
   color: #ffffff;
   background-color: #8e2679;
-  border-top: 10px dashed #f7941d;
+  border-top: 5px dashed #f7941d;
   margin-bottom: 0px;
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -38,10 +38,8 @@ section {
 }
 
 .testimonial {
-  height: 60%;
-  height: 60vh;
   color: #fff;
-  border-top: 10px dashed #f7941d;
+  border-top: 5px dashed #f7941d;
   background-color: #8e2679;
 }
 
@@ -54,8 +52,11 @@ section {
 
 .section {
   &--subscribe {
+    h1, h2 {
+      color: #898989;
+    }
     color: #898989;
-    border-top: 10px dashed #f7941d;
+    border-top: 5px dashed #f7941d;
     background-color: #ffffff;
   }
 }
