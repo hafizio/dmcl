@@ -11,18 +11,19 @@ title: Daddy Mummy Co
             h1 Daddy
             h2 Mummy.co
           br
-          h2 A platform that bridges parents and educators for a better tomorrow
-          br
-          = link_to 'Read More', '#features', class: 'btn btn-lg btn-orange'
+          .body
+            h2 A platform that bridges parents and educators for a better tomorrow
+            br
+            = link_to 'Read More', '#features', class: 'btn btn-lg btn-orange'
 #stats
   .jumbotron.jumbotron-fluid.stats
     .container.text-center
       .col-md-4.border-right
-        h1 15,000+
+        h1 10,000+
         h4 LISTING
         h5 Find pre-schools, enrichment classes and children activities all for FREE!
       .col-md-4.border-right
-        h1 1.5mil+
+        h1 1mil+
         h4 PARENTS
         h5 We have the biggest number of parents using our site!
       .col-md-4
@@ -105,33 +106,39 @@ title: Daddy Mummy Co
         .row
           b Luqman Hakim
         .row Developer
-section.section--subscribe#subscribe
-  .container
-    .col-md-6.col-md-offset-3
-      .text-center
-        h2 Please complete the form below
-        p We'll get in touch once our platform is ready
-      form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
-        input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
-        input name="id" type="hidden" value="a45841c5b4"
-        .form-group
-          input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name" data-minlength="3" required=""
-          .help-block.with-errors
-        .form-group
-          input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location (City)" data-minlength="3" required=""
-          .help-block.with-errors
-        .form-group
-          input#MERGE5.form-control name="MERGE5" size="25" type="number" value="" placeholder="Kid’s Age (in years)" required=""
-          .help-block.with-errors
-        .form-group
-          input#MERGE4.form-control name="MERGE4" size="25" type="number" value="" placeholder="Monthly Budget (in MYR)" required=""
-          .help-block.with-errors
-        .form-group
-          input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
-          .help-block.with-errors
-          input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
-        .form-group.text-center
-          button.btn.btn-primary type="submit" value="send" Subscribe
+#signup
+  section.section--subscribe#subscribe
+    .container
+      .col-md-6.col-md-offset-3
+        .text-center
+          h2 Please complete the form below
+          p We'll get in touch once our platform is ready
+        form.form id="subscription_form" action="http://daddymummy.us11.list-manage.com/subscribe/post" method="POST"
+          input name="u" type="hidden" value="037bffdb2d8c7c419c15364a3"
+          input name="id" type="hidden" value="a45841c5b4"
+          .form-group
+            input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Full Name" data-minlength="3" required=""
+            .help-block.with-errors
+          .form-group
+            input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Location (City)" data-minlength="3" required=""
+            .help-block.with-errors
+          .form-group
+            input#MERGE5.form-control name="MERGE5" size="25" type="number" value="" placeholder="Kid’s Age (in years)" required=""
+            .help-block.with-errors
+          .form-group
+            input#MERGE4.form-control name="MERGE4" size="25" type="number" value="" placeholder="Monthly Budget (in MYR)" required=""
+            .help-block.with-errors
+          .form-group
+            input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email" required=""
+            .help-block.with-errors
+            input.hidden name="b_037bffdb2d8c7c419c15364a3_a45841c5b4" tabindex="-1" type="text" value=""
+          .form-group.text-center
+            button.btn.btn-primary type="submit" value="send" Subscribe
+.text-right
+  = link_to 'https://www.facebook.com/daddymummy.co'
+    = image_tag "icons/facebook_icon_50x50.png"
+  = image_tag "icons/twitter_icon_50x50.png"
+  = image_tag "icons/youtube_icon_50x50.png"
 = partial 'footer'
 
 

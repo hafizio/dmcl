@@ -16,9 +16,13 @@ section {
   background-color: #8e2679;
   border-top: 5px dashed #f7941d;
   margin-bottom: 0px;
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4 {
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
+  }
+  h5 {
+    font-weight: 400;
+    color: #fff;
   }
 }
 
